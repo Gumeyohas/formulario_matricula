@@ -1,0 +1,26 @@
+#app {
+    display: grid;
+    grid-template-columns: 51.25% 48.75%;
+
+    height: 100vh;
+    overflow: hidden;
+}
+
+main {
+    overflow: auto;
+    padding: 4rem;
+    /* nesting css: mesma coisa que-> main .main-container */
+    & .main-container {
+        max-width: 33rem;
+        margin-left: auto;
+    }
+}
+
+aside {
+    background-color: var(--surface-secondary);
+    padding: 4rem;
+    /* nesting css: mesma coisa que-> aside .aside-container */
+    & .aside-container {
+        max-width: 31rem;
+    }
+}
